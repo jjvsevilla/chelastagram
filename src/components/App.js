@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header title="BeerJS!" />
+        <Header title="FrontEnd!" subtitle="BeerJS" />
         <Main />
       </div>
     );

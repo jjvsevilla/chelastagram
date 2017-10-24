@@ -5,13 +5,15 @@ import beerJS from '../imgs/BeerJS.png';
 
 const getFormattedTitle = title => (title.split('').map(t => `<span>${t}</span>`).join(''))
 
-const Header = (props) => {
-  const spans = getFormattedTitle(props.title);
+const Header = ({ title, subtitle }) => {
+  const spans = getFormattedTitle(title);
   return (
     <div className="header-wrapper">
       <Link to="/" className="header">
-        <img src={beerJS} />
-        <div className="logo" dangerouslySetInnerHTML={{__html: spans}}>
+        <img className="logo" src={beerJS} />
+        <div className="content">
+          <div className="title" dangerouslySetInnerHTML={{__html: spans}} />
+          <div className="subtitle">{subtitle}</div>
         </div>
       </Link>
     </div>
