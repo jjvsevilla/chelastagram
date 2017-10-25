@@ -9,7 +9,7 @@ function commentsReducer(state = initialState, action) {
       return {
         ...state,
         [action.chelaId]: [
-          ...state[action.chelaId],
+          ...state[action.chelaId] || [],
           {
             user: action.user,
             text: action.comment

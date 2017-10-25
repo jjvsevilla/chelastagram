@@ -10,7 +10,7 @@ const Header = ({ title, subtitle }) => {
   return (
     <div className="header-wrapper">
       <Link to="/" className="header">
-        <img className="logo" src={beerJS} />
+        <img className="logo" src={beerJS} alt={title} />
         <div className="content">
           <div className="title" dangerouslySetInnerHTML={{__html: spans}} />
           <div className="subtitle">{subtitle}</div>
