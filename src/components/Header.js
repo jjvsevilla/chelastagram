@@ -5,7 +5,7 @@ import beerJS from '../imgs/BeerJS.png';
 
 const getFormattedTitle = title => (title.split('').map(t => `<span>${t}</span>`).join(''))
 
-const Header = ({ title, subtitle }) => {
+const Header = ({ title = 'React!', subtitle = '' }) => {
   const spans = getFormattedTitle(title);
   return (
     <div className="header-wrapper">
