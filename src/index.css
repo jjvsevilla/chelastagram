@@ -65,6 +65,12 @@ html {
       margin: 0 auto;
       column-count: 3;
       column-gap: 2rem; }
+      html body div.chela-list:hover figure {
+        opacity: 0.3; }
+      html body div.chela-list figure {
+        transition: .8s opacity; }
+        html body div.chela-list figure:hover {
+          opacity: 1; }
     html body div.chela-viewer {
       max-width: 1000px;
       margin: 0 auto;
